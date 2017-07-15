@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v){
         Intent intent = new Intent(this,ResultActivity.class);
-        intent.putExtra("Value1",10);
+        intent.putExtra("Value1",30);
         intent.putExtra("Value2",20);
         startActivity(intent);
     }
