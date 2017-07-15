@@ -21,13 +21,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button1 = (Button)findViewById(R.id.button1);
         button1.setOnClickListener(this);
 
-        aEditText = (EditText)findViewById(R.id.editText1);
-        bEditText = (EditText)findViewById(R.id.editText2);
+        aEditText = (EditText) findViewById(R.id.editText1);
+        bEditText = (EditText) findViewById(R.id.editText2);
     }
     @Override
     public void onClick(View v){
         Intent intent = new Intent(this,ResultActivity.class);
-        intent.putExtra("Value1",30);
+        intent.putExtra("Value1",20);
         intent.putExtra("Value2",20);
         startActivity(intent);
     }
