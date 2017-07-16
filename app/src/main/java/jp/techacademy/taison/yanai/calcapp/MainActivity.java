@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText aEditText;
     EditText bEditText;
     double answer = 0;
-    double an1 = Double.parseDouble(String.valueOf(aEditText));
-    double an2 = Double.parseDouble(String.valueOf(bEditText));
+    //double an1 = Double.parseDouble(String.valueOf(aEditText));
+    //double an2 = Double.parseDouble(String.valueOf(bEditText));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(View v){
+
+        double an1 = Double.parseDouble(String.valueOf(aEditText));
+        double an2 = Double.parseDouble(String.valueOf(bEditText));
 
         if(v.getId() == R.id.button1){
             answer = an1 + an2;
