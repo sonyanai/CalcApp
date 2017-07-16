@@ -15,9 +15,9 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         Intent intent = getIntent();
-        answer = intent.getDoubleExtra("Answer",0);//ここの0はなに？
+        double answer = intent.getDoubleExtra("Answer",0);//ここの0はなに？
 
         TextView textView = (TextView)findViewById(R.id.textView);
-        textView.setText(String.valueOf(answer));
+        textView.setText(Double.toString(answer));
     }
 }
