@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText aEditText;
     EditText bEditText;
+    double answer = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +35,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(View v){
+        double value1 = Double.parseDouble(String.valueOf(aEditText));
+        double value2 = Double.parseDouble(String.valueOf(bEditText));
+        if(v.getId() == R.id.button1){
+            answer = value1 + value2;
+        }else if(v.getId() == R.id.button2){
+            answer = value1 - value2;
+        }else if(v.getId() == R.id.button3){
+            answer = value1 * value2;
+        }else{
+            answer = value1 / value2;
+        }
         Intent intent = new Intent(this,ResultActivity.class);
-        intent.putExtra("Value1",20);
-        intent.putExtra("Value2",20);
+        intent.putExtra("Answer",answer);
         startActivity(intent);
     }
 }
