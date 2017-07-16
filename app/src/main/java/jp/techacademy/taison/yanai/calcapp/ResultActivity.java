@@ -7,8 +7,6 @@ import android.widget.TextView;
 
 public class ResultActivity extends AppCompatActivity {
 
-    double answer = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
