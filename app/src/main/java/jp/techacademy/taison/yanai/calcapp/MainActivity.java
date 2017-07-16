@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v){
 
         double an1 = Double.parseDouble(aEditText.getText().toString());
-        double an2 = Double.parseDouble(aEditText.getText().toString());
+        double an2 = Double.parseDouble(bEditText.getText().toString());
 
         if(v.getId() == R.id.button1){
             answer = an1 + an2;
