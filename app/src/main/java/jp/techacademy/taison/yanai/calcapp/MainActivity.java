@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(View v){
-        /*
+
         if(v.getId() == R.id.button1){
             answer = an1 + an2;
         }else if(v.getId() == R.id.button2){
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             answer = an1 * an2;
         }else{
             answer = an1 / an2;
-        }*/
+        }
 
         Intent intent = new Intent(this,ResultActivity.class);
         intent.putExtra("Answer",answer);

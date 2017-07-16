@@ -13,9 +13,10 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         Intent intent = getIntent();
-        double answer = intent.getDoubleExtra("Answer",0);//ここの0はなに？
+        double answer = intent.getDoubleExtra("answer",0);//0は値がなかった時のデフォ
+        String Answer = Double.toString(answer);
 
         TextView textView = (TextView)findViewById(R.id.textView);
-        textView.setText(Double.toString(answer));
+        textView.setText(Answer);
     }
 }
