@@ -12,8 +12,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText aEditText;
     EditText bEditText;
     double answer = 0;
-    //double an1 = Double.parseDouble(String.valueOf(aEditText));
-    //double an2 = Double.parseDouble(String.valueOf(bEditText));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
