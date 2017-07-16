@@ -13,10 +13,10 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         Intent intent = getIntent();
-        double answer = intent.getDoubleExtra("answer",0);//0は値がなかった時のデフォ
-        String Answer = Double.toString(answer);
+        double answer = intent.getDoubleExtra("Answer",0);//0は値がなかった時のデフォ
+        String fAnswer = Double.toString(answer);
 
         TextView textView = (TextView)findViewById(R.id.textView);
-        textView.setText(Answer);
+        textView.setText(fAnswer);
     }
 }
