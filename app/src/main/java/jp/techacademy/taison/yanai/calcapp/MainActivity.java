@@ -31,9 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button4 = (Button)findViewById(R.id.button4);
         button4.setOnClickListener(this);
 
-        //TextView textView = (TextView)findViewById(R.id.textView);
-        //textView.setOnClickListener(this);
-
         aEditText = (EditText) findViewById(R.id.editText1);
         bEditText = (EditText) findViewById(R.id.editText2);
     }
@@ -71,9 +68,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         }
-
-        //Intent intent = new Intent(this,ResultActivity.class);
-        //intent.putExtra("Answer",answer);
-        //startActivity(intent);
     }
 }
