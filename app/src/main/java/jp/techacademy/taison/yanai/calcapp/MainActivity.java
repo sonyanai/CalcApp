@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textView.setOnClickListener(this);
 
 
+
+
         if (v.getId() == R.id.button1){
             answer = an1 + an2;
             Intent intent = new Intent(this,ResultActivity.class);
