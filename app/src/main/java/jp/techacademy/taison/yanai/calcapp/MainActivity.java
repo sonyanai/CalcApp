@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra("Answer",answer);
                 startActivity(intent);
             }
-            return;
         }
 
         //Intent intent = new Intent(this,ResultActivity.class);
