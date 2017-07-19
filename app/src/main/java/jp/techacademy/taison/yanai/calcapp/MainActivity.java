@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button4 = (Button)findViewById(R.id.button4);
         button4.setOnClickListener(this);
 
+        //TextView textView = (TextView)findViewById(R.id.textView);
+        //textView.setOnClickListener(this);
+
         aEditText = (EditText) findViewById(R.id.editText1);
         bEditText = (EditText) findViewById(R.id.editText2);
     }
@@ -38,14 +42,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         double an1 = Double.parseDouble(aEditText.getText().toString());
         double an2 = Double.parseDouble(bEditText.getText().toString());
+        TextView textView = (TextView)findViewById(R.id.textView);
+        textView.setOnClickListener(this);
 
-        if(v.getId() == R.id.button1){
+
+        if (v.getId() == R.id.button1){
             answer = an1 + an2;
         }else if(v.getId() == R.id.button2){
             answer = an1 - an2;
         }else if(v.getId() == R.id.button3){
             answer = an1 * an2;
         }else{
+            if(an2 == 0){
+                textView.setText("0で割ることはできません");
+            }
             answer = an1 / an2;
         }
 

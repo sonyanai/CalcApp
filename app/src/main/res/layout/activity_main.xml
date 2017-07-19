@@ -55,4 +55,11 @@
         android:layout_toRightOf="@+id/button3"
         android:id="@+id/button4"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数値を入力してください"
+        android:layout_below="@+id/button1"
+        android:id="@+id/textView"/>
+
 </RelativeLayout>
