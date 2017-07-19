@@ -48,19 +48,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v.getId() == R.id.button1){
             answer = an1 + an2;
+            Intent intent = new Intent(this,ResultActivity.class);
+            intent.putExtra("Answer",answer);
+            startActivity(intent);
         }else if(v.getId() == R.id.button2){
             answer = an1 - an2;
+            Intent intent = new Intent(this,ResultActivity.class);
+            intent.putExtra("Answer",answer);
+            startActivity(intent);
         }else if(v.getId() == R.id.button3){
             answer = an1 * an2;
+            Intent intent = new Intent(this,ResultActivity.class);
+            intent.putExtra("Answer",answer);
+            startActivity(intent);
         }else{
             if(an2 == 0){
                 textView.setText("0で割ることはできません");
             }
             answer = an1 / an2;
+            Intent intent = new Intent(this,ResultActivity.class);
+            intent.putExtra("Answer",answer);
+            startActivity(intent);
         }
 
-        Intent intent = new Intent(this,ResultActivity.class);
-        intent.putExtra("Answer",answer);
-        startActivity(intent);
+        //Intent intent = new Intent(this,ResultActivity.class);
+        //intent.putExtra("Answer",answer);
+        //startActivity(intent);
     }
 }
