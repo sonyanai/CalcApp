@@ -64,11 +64,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else{
             if(an2 == 0){
                 textView.setText("0で割ることはできません");
+            }else{
+                answer = an1 / an2;
+                Intent intent = new Intent(this,ResultActivity.class);
+                intent.putExtra("Answer",answer);
+                startActivity(intent);
             }
-            answer = an1 / an2;
-            Intent intent = new Intent(this,ResultActivity.class);
-            intent.putExtra("Answer",answer);
-            startActivity(intent);
+            return;
         }
 
         //Intent intent = new Intent(this,ResultActivity.class);
