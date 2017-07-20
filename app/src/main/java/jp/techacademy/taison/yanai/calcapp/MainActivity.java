@@ -40,39 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TextView textView = (TextView)findViewById(R.id.textView);
         textView.setOnClickListener(this);
 
-        /*if (aEditText.getText().toString().length()==0 || bEditText.getText().toString().length()==0){
-            textView.setText("数字を入力してください");
-            textView.setTextSize(20);
-        }else{
-            double an1 = Double.parseDouble(aEditText.getText().toString());
-            double an2 = Double.parseDouble(bEditText.getText().toString());
-
-            if (v.getId() == R.id.button1){
-                answer = an1 + an2;
-                Intent intent = new Intent(this,ResultActivity.class);
-                intent.putExtra("Answer",answer);
-                startActivity(intent);
-            }else if(v.getId() == R.id.button2){
-                answer = an1 - an2;
-                Intent intent = new Intent(this,ResultActivity.class);
-                intent.putExtra("Answer",answer);
-                startActivity(intent);
-            }else if(v.getId() == R.id.button3){
-                answer = an1 * an2;
-                Intent intent = new Intent(this,ResultActivity.class);
-                intent.putExtra("Answer",answer);
-                startActivity(intent);
-            }else{
-                if(an2 == 0){
-                    textView.setText("0で割ることはできません");
-                }else{
-                    answer = an1 / an2;
-                    Intent intent = new Intent(this,ResultActivity.class);
-                    intent.putExtra("Answer",answer);
-                    startActivity(intent);
-                }
-            }
-        }*/
         if(aEditText.getText().toString().equals(".")  || bEditText.getText().toString().equals(".")){
             textView.setText("きちんとした数字を入力してください");
         }else{
