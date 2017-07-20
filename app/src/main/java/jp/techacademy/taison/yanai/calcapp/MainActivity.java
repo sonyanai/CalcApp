@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (aEditText.getText().toString().length()==0 || bEditText.getText().toString().length()==0){
             textView.setText("数字を入力してください");
+            textView.setTextSize(15);
         }else{
             double an1 = Double.parseDouble(aEditText.getText().toString());
             double an2 = Double.parseDouble(bEditText.getText().toString());
