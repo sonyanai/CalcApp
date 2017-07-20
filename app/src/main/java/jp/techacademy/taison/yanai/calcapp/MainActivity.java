@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TextView textView = (TextView)findViewById(R.id.textView);
         textView.setOnClickListener(this);
 
-
+        //if (an1.text.length())
 
 
         if (v.getId() == R.id.button1){
