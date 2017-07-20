@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TextView textView = (TextView)findViewById(R.id.textView);
         textView.setOnClickListener(this);
 
-        if (aEditText.getText().toString().length()==0){
+        if (aEditText.getText().toString().length()==0 || bEditText.getText().toString().length()==0){
             textView.setText("数字を入力してください");
         }else{
             double an1 = Double.parseDouble(aEditText.getText().toString());
